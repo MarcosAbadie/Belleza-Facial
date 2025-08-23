@@ -144,8 +144,7 @@ main {
     }
 
     .lista-servicios { 
-        position: relative;
-        left: 200px;
+        text-align: center;
         font-family: monotype corsiva;
         list-style-position: inside;
         font-size: 1.5em;
@@ -167,8 +166,8 @@ main {
         display: grid;
         grid-template-areas: 
             "titulo titulo titulo"
-            "foto1  foto2  texto1"
             "foto1  foto2  foto3"
+            "texto1 texto1 texto1"
             "titulo2 titulo2 titulo2"
             "texto2  texto2  texto2"
             "lista1 lista1 lista1"
@@ -381,7 +380,7 @@ main {
         text-align: center;
     }
     .fotop {
-        grid-area: foto;
+        grid-area: fotop;
     }
     .fotop2 {
         grid-area: fotop2;
@@ -443,17 +442,13 @@ main {
     }
     nav {
         text-align: center;
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .navbar a {
-        font-size: x-large;
+        font-size: large;
     }
-   .lista-servicios {
-        font-size: 1.2em;
-        margin-inline-start: 2px;
-        margin-inline-end: 2px;
-       
-    }
+   
+    
     .bienvenida-pagina, .rubro-pagina, .explicacion-titulo {
         margin-inline-start: 20px;
         margin-inline-end: 20px;
@@ -465,10 +460,11 @@ main {
     }
     main h1, main h2, main h3, main h4, main h5, main h6 {
         font-size: 1.5em;
+        margin-top: 80px;
+        
     }
 
     .contenedor {
-        grid-template-columns: 1fr;
         grid-template-areas: 
             "titulo"
             "foto1"
@@ -491,12 +487,25 @@ main {
             "texto6"
             "lista4"
             "titulo6"
-            "texto7";
+            "texto7" !important;
     }
+
     .contenedor img {
         width: 20% 30% 30% 30%;
         height: auto;
         border-radius: 20px;
+    }
+    .contenedor2 {
+        grid-template-areas: 
+            "titulop"
+            "fotop"
+            "textop"
+            "fotop2"
+            "textop2"
+            "fotop3"
+            "textop3"
+            "fotop4"
+            "textop4" !important;
     }
     .contenedor2 img {
         width: 20% 30% 30% 30%;
@@ -551,8 +560,8 @@ main {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
             "titulo titulo titulo"
-            "foto1 foto2 texto1"
             "foto1 foto2 foto3"
+            "texto1 texto1 texto1"
             "titulo2 titulo2 titulo2"
             "texto2 texto2 texto2"
             "lista1 lista1 lista1"
@@ -566,7 +575,7 @@ main {
             "foto6 texto6 texto6"
             "lista4 lista4 lista4"
             "titulo6 titulo6 titulo6"
-            "texto7 texto7 texto7";
+            "texto7 texto7 texto7" !important;
     }
     .contenedor img {
         width: 80%;
@@ -577,14 +586,11 @@ main {
         grid-template-columns: 1fr;
         grid-template-areas: 
             "titulop"
-            "fotop"
-            "textop"
-            "fotop2"
-            "textop2"
-            "fotop3"
-            "textop3"
-            "fotop4"
-            "textop4";
+            "fotop  texop"
+            "fotop2 textop2"
+            "fotop3 textop3"
+            "fotop4 textop4";
+
     }
 }
 /* Media queries para pantallas grandes */
